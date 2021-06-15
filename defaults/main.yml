@@ -3,8 +3,10 @@ nrinfragent_state: "latest"
 nrinfragent_service_enabled: "yes"
 nrinfragent_service_state: "started"
 nrinfragent_config:
-  license_key: YOUR_LICENSE_KEY
+  license_key: "68d93d382301e2155f7f67097ad65dcd6db76cde"
 nrinfragent_integrations: []
 nrinfragent_tarball_url: "http://download.newrelic.com/infrastructure_agent/binaries/linux/{{ nrinfragent_architecture }}/newrelic-infra_linux_{{ nrinfragent_tarball_version }}_{{ nrinfragent_architecture }}.tar.gz"
 nrinfragent_tarball_download_dir: "/opt"
 nrinfragent_tarball_user: "root"
+nrinfragent_download_win: "https://download.newrelic.com/infrastructure_agent/windows/newrelic-infra.msi"
+nrinfragent_win_state: "present"
