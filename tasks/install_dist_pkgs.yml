@@ -100,10 +100,8 @@
 - name: install agent (windows)
   win_package:
     path: "{{ nrinfragent_download_win }}"
-    state: "{{ nrinfragent_win_state }}"
-    arguments: /qn /i
   when:
-    - nrinfragent_state == "absent"
+    - nrinfragent_state != "absent"
     - nrinfragent_os_name|lower == 'windows'
 
 - name: setup agent config
